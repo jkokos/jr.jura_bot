@@ -14,6 +14,7 @@ bot = Bot(token=config.TOKEN)
 dp = Dispatcher()
 
 
+
 async def start_bot():
     dp.startup.register(misc.on_start) # иконка в начале
     dp.shutdown.register(misc.on_shutdown) # иконка в конце
