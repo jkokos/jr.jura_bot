@@ -3,7 +3,7 @@ from aiogram import Bot
 #import httpx
 import config
 from .enums import GPTModel
-from .gpt_message import GPTMessage
+from .gpt_messages import GPTMessage
 
 
 class GPTService:
@@ -15,15 +15,15 @@ class GPTService:
             cls._instance = super().__new__(cls)
         return cls._instance
 
-    def __init__(self,model:GPTModel = GPTModel.GPT_5_5): # inicializator
-        self._gpt_token = config.OPEAI_API_KEY
+    def __init__(self,model:GPTModel = GPTModel.GPT_5_4_mini): # inicializator
+        self._gpt_token = config.OPENAI_API_TOKEN
         #self._proxy = config.PROXY
         self._client = self._create_client()
         self._model = model.value
 
     def _create_client(self):                      #sozdanie clienta
         gpt_client = openai.AsyncOpenAI(
-            apy_key=self._gpt_token,
+            api_key=self._gpt_token,
             #http_client=httpx.AsyncClient(
                 #proxy=self._proxy,
             #)
@@ -34,8 +34,8 @@ class GPTService:
     async def request(self,message_list: GPTMessage, bot:Bot):   #otpravka oshibki adminu
         try:
             response = await self._client.chat.completions.create(
-                message=message_list.message_list,
-                model=self.model
+                messages=message_list.message_list,
+                model=self._model
             )
             return response.choices[0].message.content
         except Exception as e:
