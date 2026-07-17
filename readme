@@ -1,0 +1,67 @@
+# Telegram AI Bot
+
+Это Telegram-бот, написанный на Python с использованием библиотеки **aiogram** и **OpenAI API**.
+
+## Что умеет бот
+
+- 🎲 **Random** — показывает случайные интересные факты.
+- 🤖 **GPT** — отвечает на вопросы пользователя.
+- 💬 **Talk** — позволяет общаться с известными людьми (Илон Маск, Ленин, Курт Кобейн).
+- 🧠 **Quiz** — проводит викторину по разным темам.
+- 📝 Ведет логирование работы бота.
+
+## Используемые технологии
+
+- Python
+- aiogram 3
+- OpenAI API
+- FSM (для хранения состояния пользователя)
+- logging
+
+## Установка
+
+1. Склонировать проект:
+
+```bash
+git clone https://github.com/jkokos/jr.jura_bot
+```
+
+2.  Откройте проект в PyCharm:
+
+3. Установить зависимости:
+
+```bash
+pip install -r requirements.txt
+```
+
+4. Создать файл `.env` и добавить в него:
+
+```env
+TOKEN=ВАШ_ТЕЛЕГРАМ_ТОКЕН
+OPENAI_API_KEY=ВАШ_OPENAI_API_KEY
+```
+
+## Запуск
+
+```bash
+python main.py
+```
+
+## Структура проекта
+
+```
+project/
+│
+├── main.py
+├── handlers.py
+├── keyboards.py
+├── config.py
+├── logger_config.py
+├── resources/
+├── utils/
+└── logs/
+```
+
+## Автор
+
+Jura

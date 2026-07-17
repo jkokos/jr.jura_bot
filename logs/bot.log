@@ -1,0 +1,17 @@
+17.07.2026 15:51:29 | INFO | __main__ | Запуск Telegram-бота
+17.07.2026 15:51:29 | INFO | aiogram.dispatcher | Start polling
+17.07.2026 15:51:29 | INFO | aiogram.dispatcher | Run polling for bot @JR_Jura_bot id=8842101461 - 'VOT'
+17.07.2026 15:51:45 | INFO | aiogram.dispatcher | Polling stopped
+17.07.2026 15:51:45 | ERROR | aiogram.dispatcher | Failed to fetch updates - TelegramNetworkError: HTTP Client says - ServerDisconnectedError: Server disconnected
+17.07.2026 15:51:45 | WARNING | aiogram.dispatcher | Sleep for 1.000000 seconds and try again... (tryings = 0, bot id = 8842101461)
+17.07.2026 15:51:46 | INFO | __main__ | Закрытие сессии бота
+17.07.2026 15:51:46 | INFO | aiogram.dispatcher | Polling stopped for bot @JR_Jura_bot id=8842101461 - 'VOT'
+17.07.2026 15:51:46 | INFO | __main__ | Бот остановлен пользователем через Ctrl+C
+17.07.2026 15:59:41 | INFO | __main__ | Поехали
+17.07.2026 15:59:41 | INFO | aiogram.dispatcher | Start polling
+17.07.2026 15:59:41 | INFO | aiogram.dispatcher | Run polling for bot @JR_Jura_bot id=8842101461 - 'VOT'
+17.07.2026 16:11:27 | INFO | aiogram.dispatcher | Polling stopped
+17.07.2026 16:11:27 | ERROR | aiogram.dispatcher | Failed to fetch updates - TelegramNetworkError: HTTP Client says - ServerDisconnectedError: Server disconnected
+17.07.2026 16:11:27 | WARNING | aiogram.dispatcher | Sleep for 1.000000 seconds and try again... (tryings = 0, bot id = 8842101461)
+17.07.2026 16:11:27 | INFO | __main__ | close
+17.07.2026 16:11:27 | INFO | aiogram.dispatcher | Polling stopped for bot @JR_Jura_bot id=8842101461 - 'VOT'
