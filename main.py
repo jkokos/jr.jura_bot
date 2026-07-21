@@ -32,10 +32,11 @@ async def start_bot():
         raise
     finally:
         logger.info("close")
+        await bot.session.close()
 
 # print('work')
 if __name__ == '__main__':
     try:
         asyncio.run(start_bot())
     except KeyboardInterrupt: # падает без ошибок
-        pass
+        logger.info("Остановлен")
